@@ -1,0 +1,5 @@
+export const MESSAGES = [
+
+    "Doggo ipsum pupperino borking doggo long woofer wow very biscit woofer, clouds fluffer woofer. Wow very biscit blop lotsa pats h*ck you are doing me a frighten blop, I am bekom fat woofer very hand that feed shibe. Mlem puggo very good spot big ol pupper wow such tempt shooberino the neighborhood pupper, ur givin me a spook you are doing me a frighten thicc very good spot. Noodle horse dat tungg tho maximum borkdrive wrinkler pupperino pupper mlem, shooberino fluffer ruff many pats. Heckin good boys and girls what a nice floof heck smol shooberino corgo very hand that feed shibe, long bois fluffer heckin angery woofer blep pupper. Noodle horse clouds vvv shoober noodle horse blop, heck corgo very good spot doggo. Long water shoob pats woofer thicc, heck",
+
+];

@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HomePageHeader from './components/HomePageHeader/HomePageHeader'
 import InfoBox from './components/InfoBox/InfoBox'
+import CustomButton from './components/CustomButton/CustomButton'
 import { MESSAGES } from './Messages'
 
 
@@ -17,8 +15,8 @@ function App() {
       <HomePageHeader></HomePageHeader>
     </header >
     <main className='page_container'>
-      <button className='button'>Knapp1</button>
-      <button className='button'>Knapp2</button>
+      <CustomButton>Kundregister</CustomButton>
+       <CustomButton>Hundraser</CustomButton>
       
       
 </main>

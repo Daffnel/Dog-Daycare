@@ -1,0 +1,14 @@
+/*Gör bilden rund
+
+object-fit: cover;  fyller cirkelnb utan att förvrängas eller beskäras
+
+*/
+.home-page-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+    display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}

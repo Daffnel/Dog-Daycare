@@ -9,14 +9,18 @@ function App() {
 
 
   return (
-<>  
-<ul>
-  <li>Header_logo</li>
-   <li> knappar / navigering </li>
-    
-</ul>
-</>
+<>
+    <header >
+      <HomePageHeader></HomePageHeader>
+    </header >
+    <main className='page_container'>
+       <h1>knapp1</h1>
+       <h1>knapp2</h1>
+       <h1>knapp3</h1>
+       <h1>knapp4</h1>
+</main>
 
+</>
   );
 }
 

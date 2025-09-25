@@ -13,7 +13,7 @@ function App() {
 <>
 <section className='border_frame'>
     <header >
-      <HomePageHeader></HomePageHeader>
+      <HomePageHeader title={"Doggy DayCare"}></HomePageHeader>
     </header >
     <main className='page_container'>
       <NavButton navDestination={"/customers"}>Kundregister</NavButton>

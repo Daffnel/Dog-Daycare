@@ -15,7 +15,7 @@ export const routerPaths = [
   }, 
   {
     path: "/customers",
-    element: <CustomerPage></CustomerPage> 
+    element: <ReadDataProvider><CustomerPage></CustomerPage> </ReadDataProvider>
     },
   {
     path: "/breeds",

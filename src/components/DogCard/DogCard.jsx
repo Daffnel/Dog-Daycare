@@ -4,7 +4,7 @@ import bone from "../../assets/bone.png"
 
 
 
-export default function DogCard({idNumber }){
+export default function DogCard({ idNumber = "ELN562847" }){
 
     const {data} = useCustomerData();
     const updatedCustomerData = [...data]; 
@@ -12,7 +12,7 @@ export default function DogCard({idNumber }){
 
     const customer = updatedCustomerData.find((customer) => customer.chipNumber === idNumber)
 
-    console.log(customer)
+    //console.log(customer)
 
     if(customer){
 

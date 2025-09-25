@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
-import Customers from './components/Customers/Customers.jsx'
+import { ReadDataProvider } from './DataProvider.jsx'
+import Customers from './components/Customers/DogCard.jsx'
 import Breeds from './components/Breeds/Breeds.jsx'
 
 export const routerPaths = [
@@ -13,7 +14,7 @@ export const routerPaths = [
   }, 
   {
     path: "/customers",
-    element: <Customers></Customers>
+    element:  <ReadDataProvider><Customers/></ReadDataProvider>
   },
   {
     path: "/breeds",
@@ -25,6 +26,8 @@ const router = createHashRouter(routerPaths);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+   
+      <RouterProvider router={router}/>
+    
   </StrictMode>,
 )

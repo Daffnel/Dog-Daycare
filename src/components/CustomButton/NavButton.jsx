@@ -19,13 +19,9 @@ export default function NavButton({children, navDestination}){
 }
 
     return(
-
         <button className="custom_button"
         onClick={() => handleClick(navDestination)}>
         {children}
         </button>
-
-
-
     );
 }

@@ -1,0 +1,43 @@
+.dog_card {
+  display: flex;
+  align-items: center;            /* vertikal centrering */
+  gap: 16px;                      /* mellanrum mellan bild och text */
+  background-color: rgba(255, 255, 255, 0.9); /* ljus bakgrund */
+  padding: 16px 20px;
+  border-radius: 16px;            /* rundade hörn */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* skugga för "kort-känsla" */
+  max-width: 360px;
+  margin: 12px auto;
+  font-family: 'Nunito', sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dog_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.dog_image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;             /* rund bild */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dog_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog_name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.owner_name {
+  margin: px 0 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}

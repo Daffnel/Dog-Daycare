@@ -2,9 +2,9 @@ import { useCustomerData } from "../../DataProvider.jsx"
 import { useState } from "react";
 import NavButton from "../CustomButton/NavButton.jsx";
 
-export default function CustomerList(){
+export default function CustomerList({selectedCustomer ,setSelectedCustomer, onSelectCustomer}){
 
-        const[selectedCustomer, setSelectedCustomer] = useState(null);
+        
         const[page, setPage] = useState([0,10])
         const[morePages, setMorePages] = useState(true);
 
@@ -40,7 +40,7 @@ export default function CustomerList(){
         <li 
         key={customer.chipNumber}
         className="customer_list_item"
-        onClick={() => setSelectedCustomer(customer)}>
+        onClick={() => onSelectCustomer(customer.chipNumber)}>
         {customer.owner.name} {customer.owner.lastName} 
          {customer.name ? ` - ${customer.name}` : ""}    
           

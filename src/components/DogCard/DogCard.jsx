@@ -1,12 +1,16 @@
 import { useCustomerData } from "../../DataProvider.jsx"
 import "./DogCard.css"
 import bone from "../../assets/bone.png"
+import { useState } from "react";
 
 
 
-export default function DogCard({ idNumber = "ELN562847" }){
+export default function DogCard({ idNumber }){
+    if(!idNumber) return null;  //Lämna om vi inte har ett id
 
     const {data} = useCustomerData();
+   
+
     const updatedCustomerData = [...data]; 
     let dogCard;
 
@@ -15,9 +19,9 @@ export default function DogCard({ idNumber = "ELN562847" }){
     //console.log(customer)
 
     if(customer){
-
      dogCard = <li key={customer.owner.phoneNumber}>
-            <div className="dog_card">
+            <div className="dog_card_container">
+                <div className="dog_card"> 
                 <img className="dog_image"
                 src={customer.img} alt={customer.name}
                 />
@@ -30,10 +34,11 @@ export default function DogCard({ idNumber = "ELN562847" }){
                     <p>Ålder: {customer.age}</p>
                     <p>Chipnummer: {customer.chipNumber}</p>
                     <p>Telefon: {customer.owner.phoneNumber}</p>
-                    
+                    </div>
                 </div>
             </div>
         </li>
+        
     } else {
      dogCard = <li>
             <div className="dog_card">
@@ -41,23 +46,17 @@ export default function DogCard({ idNumber = "ELN562847" }){
                 <div className="dog_info">
                    
                     <h2 className="dog_name">Ingen data</h2>
-                   
-                    
                 </div>
             </div>
         </li>
     }
 
-
-
-
+    
     return(
        
-        <main className="">
-            <section>
-                {dogCard}
-            </section>
-        </main>
+        <div >
+            {dogCard}
+        </div>
       
     );
 }

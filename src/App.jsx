@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import HomePageHeader from './components/HomePageHeader/HomePageHeader'
+import InfoBox from './components/InfoBox/InfoBox'
+import NavButton from './components/CustomButton/NavButton'
+import { MESSAGES } from './Messages'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+<>
+<section className='border_frame'>
+    <header >
+      <HomePageHeader></HomePageHeader>
+    </header >
+    <main className='page_container'>
+      <NavButton navDestination={"/customers"}>Kundregister</NavButton>
+       <NavButton navDestination={"/breeds"}>Hundraser</NavButton>
+       <NavButton navDestination={"/prislista"}>Prislista </NavButton>
+       
+       
+      
+      
+</main>
+ <footer>
+       <InfoBox message={MESSAGES[0]}></InfoBox>
+      </footer>
+</section>      
+</>
+  );
 }
 
 export default App

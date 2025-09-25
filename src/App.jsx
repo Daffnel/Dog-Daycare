@@ -1,7 +1,7 @@
 import './App.css'
 import HomePageHeader from './components/HomePageHeader/HomePageHeader'
 import InfoBox from './components/InfoBox/InfoBox'
-import CustomButton from './components/CustomButton/CustomButton'
+import NavButton from './components/CustomButton/NavButton'
 import { MESSAGES } from './Messages'
 
 
@@ -15,8 +15,11 @@ function App() {
       <HomePageHeader></HomePageHeader>
     </header >
     <main className='page_container'>
-      <CustomButton>Kundregister</CustomButton>
-       <CustomButton>Hundraser</CustomButton>
+      <NavButton navDestination={"/customers"}>Kundregister</NavButton>
+       <NavButton navDestination={"/breeds"}>Hundraser</NavButton>
+       <NavButton navDestination={"/prislista"}>Prislista </NavButton>
+       
+       
       
       
 </main>

@@ -25,10 +25,11 @@ export default function CustomerPage() {
           <DogCard idNumber={selectedCustomer} />
         </div>
       )}
-
+        <div className="border_frame">
       <CustomerList onSelectCustomer={handleShowNextCustomer} />
-
-      <NavButton navDestination={""}>Hem</NavButton>
+     
+      <NavButton navDestination={"/"}>Hem</NavButton>
+         </div>
     </div>
     </main>
   );

@@ -11,11 +11,14 @@ function App() {
 
   return (
 <>
-<section className='border_frame'>
+
+<main className='page_container'>
+<section >
+  
     <header >
-      <HomePageHeader></HomePageHeader>
+      <HomePageHeader title={"Doggy DayCare"}></HomePageHeader>
     </header >
-    <main className='page_container'>
+    
       <NavButton navDestination={"/customers"}>Kundregister</NavButton>
        <NavButton navDestination={"/breeds"}>Hundraser</NavButton>
        <NavButton navDestination={"/prislista"}>Prislista </NavButton>
@@ -23,11 +26,12 @@ function App() {
        
       
       
-</main>
+
  <footer>
        <InfoBox message={MESSAGES[0]}></InfoBox>
       </footer>
-</section>      
+</section>  
+   </main>
 </>
   );
 }

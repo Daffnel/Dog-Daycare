@@ -1,13 +1,22 @@
+.dog_card_container {
+  display: flex;
+  justify-content: center; /* horisontellt */
+  align-items: center;     /* vertikalt */
+  min-height: 80vh;        /* nästan hela skärmens höjd */
+  padding: 16px;
+  flex-direction: column;
+}
+
 .dog_card {
   display: flex;
-  align-items: center;            /* vertikal centrering */
+  align-items: flex-start ;    /* vertikal centrering */
   gap: 16px;                      /* mellanrum mellan bild och text */
-  background-color: rgba(255, 255, 255, 0.9); /* ljus bakgrund */
+  background-color: #ffffff;
   padding: 16px 20px;
+  border: 1px solid rgba(0,0,0,0,1);
   border-radius: 16px;            /* rundade hörn */
   box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* skugga för "kort-känsla" */
   max-width: 360px;
-  margin: 12px auto;
   font-family: 'Nunito', sans-serif;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -37,7 +46,7 @@
 }
 
 .owner_name {
-  margin: px 0 0 0;
-  font-size: 0.95rem;
+  margin: 0;
+  font-size: 1.25rem;
   color: #555;
 }

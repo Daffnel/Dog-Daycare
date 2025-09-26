@@ -4,8 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { ReadDataProvider } from './DataProvider.jsx'
-import Customers from './components/Customers/DogCard.jsx'
+import DogCard from './components/DogCard/DogCard.jsx'
 import Breeds from './components/Breeds/Breeds.jsx'
+import CustomerPage from './pages/CustomerPage.jsx'
 
 export const routerPaths = [
   {
@@ -14,8 +15,8 @@ export const routerPaths = [
   }, 
   {
     path: "/customers",
-    element:  <ReadDataProvider><Customers/></ReadDataProvider>
-  },
+    element: <ReadDataProvider><CustomerPage></CustomerPage> </ReadDataProvider>
+    },
   {
     path: "/breeds",
     element: <Breeds></Breeds>

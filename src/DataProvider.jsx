@@ -15,9 +15,7 @@ export  function ReadDataProvider({children}){
      
 },[]);
     
-useEffect(() => {
-  console.log("Provider körs" ,data);
-}, [data]);
+
     
  return (
     <ApiData.Provider value={{ data }}>

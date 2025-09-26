@@ -26,8 +26,8 @@ function App() {
     </header >
     
       <NavButton navDestination={"/customers"}>Kundregister</NavButton>
-       <NavButton navDestination={"/breeds"}>Hundraser</NavButton>
-       <NavButton navDestination={"/prislista"}>Prislista </NavButton>
+       <NavButton navDestination={"/breeds"}>Hundar</NavButton>
+       <NavButton navDestination={"/prislista"}>kontakt </NavButton>
        
        
       

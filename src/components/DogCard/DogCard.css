@@ -7,10 +7,11 @@
 }
 
 .dog_card {
+  border: solid 2px red;
   display: flex;
   align-items: flex-start ;    /* vertikal centrering */
   gap: 16px;                      /* mellanrum mellan bild och text */
-  background-color: #ffffff;
+  background: antiquewhite;
   padding: 8px 10px;
   border: 1px solid rgba(0,0,0,0,1);
   border-radius: 16px;            /* rundade hörn */
@@ -26,8 +27,8 @@
 }
 
 .dog_image {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;             /* rund bild */
   object-fit: cover;
   flex-shrink: 0;
@@ -35,7 +36,9 @@
 
 .dog_info {
   display: flex;
+  
   flex-direction: column;
+  align-items: flex-start;
   font-family: 'Nunito', sans-serif;
 }
 

@@ -20,6 +20,10 @@ export const routerPaths = [
     path: "/breeds",
     element: <Breeds></Breeds>
   },
+  {
+  path: "/home",
+  element: <App></App>
+  }
 ];
 
 const router = createHashRouter(routerPaths);

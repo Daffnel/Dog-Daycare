@@ -56,7 +56,8 @@ export default function CustomerList({selectedCustomer ,setSelectedCustomer, onS
              className=""
              onClick={morePages? listForward : listReset}
              >
-                <NavButton>{morePages ? "Nästa 10st" : "Början"}</NavButton>
+            
+            <NavButton>{morePages ? "Nästa 10 st." : "Början"}</NavButton>
                
             </div>
              

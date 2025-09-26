@@ -4,7 +4,7 @@ import HomePageHeader from './components/HomePageHeader/HomePageHeader'
 import InfoBox from './components/InfoBox/InfoBox'
 import NavButton from './components/CustomButton/NavButton'
 import { MESSAGES } from './Messages'
-import React from 'react'
+
 
 
 
@@ -20,7 +20,7 @@ function App() {
 
 <main className='page_container'>
 <section >
-  
+      <p className='stamp'>Devlopment mode</p>
     <header >
       <HomePageHeader title={"Doggy DayCare"}></HomePageHeader>
     </header >

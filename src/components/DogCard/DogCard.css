@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center; /* horisontellt */
   align-items: center;     /* vertikalt */
-  min-height: 80vh;        /* nästan hela skärmens höjd */
-  padding: 16px;
+  min-height: 40vh;        /* nästan hela skärmens höjd */
   flex-direction: column;
 }
 
@@ -12,7 +11,7 @@
   align-items: flex-start ;    /* vertikal centrering */
   gap: 16px;                      /* mellanrum mellan bild och text */
   background-color: #ffffff;
-  padding: 16px 20px;
+  padding: 8px 10px;
   border: 1px solid rgba(0,0,0,0,1);
   border-radius: 16px;            /* rundade hörn */
   box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* skugga för "kort-känsla" */
@@ -37,16 +36,19 @@
 .dog_info {
   display: flex;
   flex-direction: column;
+  font-family: 'Nunito', sans-serif;
 }
 
 .dog_name {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 .owner_name {
   margin: 0;
   font-size: 1.25rem;
   color: #555;
+  font-family: 'Nunito', sans-serif;
 }

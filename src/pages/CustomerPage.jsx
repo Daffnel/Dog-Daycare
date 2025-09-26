@@ -2,6 +2,7 @@ import HomePageHeader from "../components/HomePageHeader/HomePageHeader";
 import { useState } from "react";
 import CustomerList from "../components/CustomerList/CustomerList";
 import DogCard from "../components/DogCard/DogCard";
+import NavButton from "../components/CustomButton/NavButton";
 
 
 export default function CustomerPage() {
@@ -27,7 +28,7 @@ export default function CustomerPage() {
 
       <CustomerList onSelectCustomer={handleShowNextCustomer} />
 
-      
+      <NavButton navDestination={""}>Hem</NavButton>
     </div>
     </main>
   );

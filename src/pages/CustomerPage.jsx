@@ -18,7 +18,8 @@ export default function CustomerPage() {
   return (
     <main className="page_container">
     <div className="customer_page">
-        {selectedCustomer && (
+
+        {!selectedCustomer ? <HomePageHeader /> : (
         <div onClick={handleHideCustomer}>
           <DogCard idNumber={selectedCustomer} />
         </div>

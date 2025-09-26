@@ -6,6 +6,9 @@ import { useNavigate } from "react-router"
 export default function NavButton({children, navDestination}){
     const navigate = useNavigate();
    
+   /* Kontrollerar om navDestiantion är en gilltig router path 
+   *. om gitlitg navigerar till rätt sida    
+   */
     function handleClick(navDestination){
     const isValidRoute = routerPaths.some((item) => item.path === navDestination);
 

@@ -12,6 +12,7 @@ export default function CustomerList({selectedCustomer ,setSelectedCustomer, onS
         const updatedCustomerData = [...data];
         
         
+       /*hanter så att vi kan bläddra fram 10 mkunder åtgången */
         function listForward(){
             const maxIndex = updatedCustomerData.length;
 
@@ -26,7 +27,7 @@ export default function CustomerList({selectedCustomer ,setSelectedCustomer, onS
 
             setMorePages(true);
         }
-
+        /*Återställ listan och börja från början*/
         function listReset(){
              
             setPage(page => [

@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { ReadDataProvider } from './DataProvider.jsx'
 import Breeds from './components/Breeds/Breeds.jsx'
 import CustomerPage from './pages/CustomerPage.jsx'
+import Dogs from './pages/Dogs.jsx'
 
 export const routerPaths = [
   {
@@ -14,11 +15,11 @@ export const routerPaths = [
   }, 
   {
     path: "/customers",
-    element: <ReadDataProvider><CustomerPage></CustomerPage> </ReadDataProvider>
+    element: <ReadDataProvider><CustomerPage/></ReadDataProvider>
     },
   {
-    path: "/breeds",
-    element: <Breeds></Breeds>
+    path: "/dogs",
+    element: <ReadDataProvider><Dogs/></ReadDataProvider>
   },
   {
   path: "/home",

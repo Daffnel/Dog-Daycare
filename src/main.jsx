@@ -1,10 +1,9 @@
+import App from './App.jsx'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { ReadDataProvider } from './DataProvider.jsx'
-import DogCard from './components/DogCard/DogCard.jsx'
 import Breeds from './components/Breeds/Breeds.jsx'
 import CustomerPage from './pages/CustomerPage.jsx'
 

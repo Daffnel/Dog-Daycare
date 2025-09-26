@@ -3,7 +3,8 @@
   border: 2px solid rgba(255, 0, 0, 0.5);
   color: #ffffff;            
   padding: 12px 24px; 
-  margin-bottom: 22px;       
+  margin-bottom: 14px; 
+  margin: 16px;      
   border-radius: 12px;        
   font-size: clamp(1rem, 2vw, 1.25rem); /*följer med skärmstorleken*/
   cursor: pointer;

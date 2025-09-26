@@ -7,7 +7,7 @@ export default function InfoBox({message}){
         <div className="info_box">
 
             <p>
-                {message}
+               <strong> {message}   </strong> 
             </p>
 
         </div>

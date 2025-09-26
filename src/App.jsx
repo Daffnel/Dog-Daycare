@@ -1,13 +1,19 @@
+
 import './App.css'
 import HomePageHeader from './components/HomePageHeader/HomePageHeader'
 import InfoBox from './components/InfoBox/InfoBox'
 import NavButton from './components/CustomButton/NavButton'
 import { MESSAGES } from './Messages'
+import React from 'react'
 
 
 
 function App() {
 
+  /*Väljer ett slumpmässigt meddelande på startskärmen */
+  function RndMessageNr(){
+    return Math.floor(Math.random() * MESSAGES.length);
+  }
 
   return (
 <>
@@ -28,7 +34,7 @@ function App() {
       
 
  <footer>
-       <InfoBox message={MESSAGES[0]}></InfoBox>
+       <InfoBox message={MESSAGES[RndMessageNr()]}></InfoBox>
       </footer>
 </section>  
    </main>
